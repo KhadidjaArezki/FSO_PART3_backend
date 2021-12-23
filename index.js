@@ -5,6 +5,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static('build'))
 
 // Create a web server and register a callback to execute on each new request
 let notes = [
